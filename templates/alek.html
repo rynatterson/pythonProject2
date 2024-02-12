@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Riddle Challenge</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #3498db, #e74c3c); /* Blue-Red gradient background */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        button {
+            background-color: #2ecc71; /* Green button */
+            color: #fff;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: floating 2s infinite ease-in-out;
+        }
+
+        button:hover {
+            background-color: #27ae60; /* Darker green on hover */
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>You are amazing!</h1>
+
+    <p>
+        In the realm of riddles, sharp and bright,
+        You've conquered challenge four with might.
+        A mind so keen, you've cracked the door,
+        Congratulations on Riddle Four!
+    </p>
+
+    <button onclick="redirectToAlek2()">Guess</button>
+
+    <script>
+        function redirectToAlek2() {
+            // Redirect to alek2.html when the button is clicked
+            window.location.href = 'alek2';
+        }
+    </script>
+
+</body>
+
+</html>

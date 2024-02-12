@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Riddle Challenge</title>
+    <style>
+        body {
+            background: linear-gradient(45deg, #3498db, #e74c3c); /* Blue-Red gradient background */
+            color: #fff;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+
+        button {
+            background-color: #2ecc71; /* Green button */
+            color: #fff;
+            font-size: 1.5em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            animation: floating 2s infinite ease-in-out;
+        }
+
+        button:hover {
+            background-color: #27ae60; /* Darker green on hover */
+        }
+
+        @keyframes floating {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Another one!</h1>
+
+    <p> Congratulations on round two, you're in the groove,
+        Through challenges faced, you deftly move.
+        Your wit and skill have surely shone,
+        On to the next, with triumphs to be known!</p>
+
+    <button onclick="redirectToAuggie2()">Continue</button>
+
+    <script>
+        function redirectToAuggie2() {
+            // Redirect to auggie2.html when the button is clicked
+            window.location.href = 'auggie2';
+        }
+    </script>
+
+</body>
+
+</html>

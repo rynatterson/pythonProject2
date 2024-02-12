@@ -1,3 +1,4 @@
+
 // Copyright (c) 2019 ml5
 //
 // This software is released under the MIT License.
@@ -16,7 +17,7 @@ let classifier;
 let label = "Who is this computer scientist?";
 
 // Teachable Machine model URL:
-let soundModelURL = 'https://teachablemachine.withgoogle.com/models/lVsnSJ7fw/model.json';
+let soundModelURL = 'https://teachablemachine.withgoogle.com/models/tXrUDgf2k/model.json';
 
 function preload() {
   // Load the model
@@ -59,7 +60,7 @@ function gotResult(error, results) {
   }
 
   // Check if the recognized sound is "BRODY"
-  if (results[0].label === "BRODY") {
-    window.location.href = '/brody';
+  if (results[0].label === "OLIVER") {
+    window.location.href = '/oliver';
   }
 }
